@@ -1,44 +1,88 @@
+/* reset do css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body{
-    /*background: #17a1cc;*/
-    /*https://imagecolorpicker.com/pt-pt/*/
-    background-image: url('https://pbs.twimg.com/media/EYLgkLqXkAE1kEa?format=jpg&name=4096x4096');
-    background-size: auto 145vh;
-    font-family: Arial;
+  /*background: #17a1cc;*/
+  /*https://imagecolorpicker.com/pt-pt/*/
+  background-image: url('../img/fundo.jpg');
+  background-size: auto 100vh;
+  font-family: Arial;
+  font-size: 12px;
+}
+
+/*Se minha tela tiver pelo menos 400px vai carregar estes estilos*/
+@media (min-width: 400px){
+  body{
+    font-size: 14px;
   }
-  
-  .menu{
-    background-color: #48484d;
+}
+
+/*Breakpoints*/
+@media (min-width: 600px){
+  body{
+    font-size: 18px;
   }
-  
-  .menu ul{
-    display: flex;
-    /*justify-content: space-between;*/
-    justify-content: space-around;
+}
+
+@media (min-width: 900px){
+  body{
+    font-size: 20px;
   }
-  .menu li{
-    list-style: none;
-  }
-  
-  a{
-    color: white;
-    text-decoration: none;
-  }
-  
-  a:hover{
-    text-decoration: underline;
-  }
-  
-  .site-subtitle,
-  .site-title{
-    color: whitesmoke;
-    text-align: center;
-  }
-  
-  .site-title{
-  }
-  
-  .site-subtitle{
-    font-style: italic;
-  }
-  
+}
+
+header{
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu{
+  background-color: #48484d;
+  position: fixed;
+  width: 100vw;
+  top: 0;
+}
+
+.menu ul{
+  display: flex;
+  /*justify-content: space-between;*/
+  justify-content: space-around;
+}
+.menu li{
+  list-style: none;
+}
+
+.menu a{
+  display: block;
+  padding: 10px 20px;
+}
+
+a{
+  color: white;
+  text-decoration: none;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+.site-subtitle,
+.site-title{
+  color: whitesmoke;
+  text-align: center;
+}
+
+.site-subtitle{
+  font-style: italic;
+}
+
+.img-portfolio{
+  height: 180px;
+  width: 180px;
+}
   
