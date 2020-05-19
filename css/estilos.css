@@ -8,9 +8,11 @@
 body{
   /*background: #17a1cc;*/
   /*https://imagecolorpicker.com/pt-pt/*/
-  background-image: url('../img/fundo.jpg');
+  /*background-image: url('../img/fundo.jpg');*/
+  background-color: #1e1e1e;
   background-size: auto 100vh;
-  font-family: Arial;
+  /*Consolas, 'Courier New', monospace*/
+  font-family: Monospace;
   font-size: 12px;
 }
 
@@ -42,7 +44,7 @@ header{
 }
 
 .menu{
-  background-color: #48484d;
+  background-color: #464545;
   position: fixed;
   width: 100vw;
   top: 0;
@@ -63,7 +65,7 @@ header{
 }
 
 a{
-  color: white;
+  color: rgb(255, 255, 255);
   text-decoration: none;
 }
 
@@ -72,7 +74,7 @@ a:hover{
 }
 
 .site-subtitle,
-.site-title{
+.site-title, .site-portfolio{
   color: whitesmoke;
   text-align: center;
 }
@@ -85,4 +87,7 @@ a:hover{
   height: 180px;
   width: 180px;
 }
-  
+
+figcaption{
+  color: whitesmoke;
+}
